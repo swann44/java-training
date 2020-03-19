@@ -1,9 +1,11 @@
 public class FundamentalsTraining {
 
+
+	public static void main(String[] args) {
     /**
      * @param value, eg: 2
      * @return the same value, eg: 2
-     */
+     */}
     public static int sameValue(int value) {
         return 0;
     }

@@ -1,9 +1,12 @@
 public class ArrayTraining {
 
+
+	public static void main(String[] args) {
     /**
      * @param n size of the array, eg: 3
      * @return an empty int array of size n, eg: {0, 0, 0}
      */
+	}
     public int[] emptyIntArray(int n) {
 
         return null;
