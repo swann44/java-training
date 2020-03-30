@@ -98,7 +98,7 @@ public class ArrayTraining {
      * @return sum of values of the array, eg: 6 
      */
     public int sum(int[] array) {
-        
+        //methode foreach
         int sum=0;
         
         for (int value:array){
@@ -107,6 +107,13 @@ public class ArrayTraining {
             
         
         return sum;
+        //ou
+        //int sum = 0;
+        //for (int i = 0; i < value.length ; i++) {
+            //sum= sum + value[i];
+        //}
+        //return sum;
+
     }
 
     /**
@@ -181,4 +188,61 @@ public class ArrayTraining {
         }
         return concat;
     }
+    /**
+     * @param values, eg: {"a", "b", "c"}
+     * @return the concatenation of all values values, eg: "abc"
+     */
+    public static String concat(String[] values) {
+        String concat = "";
+        for (int i = 0 ; i < values.length; i++) {
+            concat = concat + values[i];
+        }
+        return concat;
+    }
+
+    /**
+     * @param values, eg: {1, 3, 5}
+     * @return if the array contains an even value, eg: false
+     */
+    public static boolean hasEven(int[] values) {
+        for (int i = 0; i< values.length; i++) {
+            if (values[i]%2 == 0){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * @param values, eg: {1, 2, 3}
+     * @param search, eg: 2
+     * @return the index of the searched value or -1 if the value isn't present, eg: 1
+     */
+    public static int indexOf(int[] values, int search) {
+        for (int i = 0; i < values.length; i++) {
+            if (values[i] == search ) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+     /**
+     * @param values, eg: {1, 2, 3, 1, 2}
+     * @param search, eg: 2
+     * @return how many times the searched value occurred, eg: 2
+     */
+    public static int count(int[] values, int search) {
+        return 0;
+    }
+
+    /**
+     * @param values, eg: {1, 2, 3}
+     * @param increment, eg: 2
+     * @return add the increment to each value of the array, eg: {3, 4, 5}
+     */
+    public static int[] incrementEach(int[] values, int increment) {
+        return null;
+    }
+
 }
